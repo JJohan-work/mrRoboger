@@ -36,7 +36,7 @@ Expect(robert("#output",[0,"beep","boop","Won't you be my neighbor?",4])).toEqua
 * * *
 
 ## Setup instructions:  
-* Go to [Github Pages](https://jjohan-work.github.io/#) to see webpage
+* Go to [Github Pages](https://jjohan-work.github.io/mrRoboger/) to see webpage
 #### Alt
 * Clone Repo
 * Open index.html in browser
