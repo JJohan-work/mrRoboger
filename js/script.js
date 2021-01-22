@@ -23,16 +23,16 @@ function robert(input) {
 function textChange(toChange,changedText) {
   var quote = $(toChange);
   var numWords = changedText.length;
-  if ((numWords >= 1) && (numWords < 30)) {
+  if ((numWords >= 1) && (numWords < 40)) {
       quote.css("font-size", "40px");
   }
-  else if ((numWords >= 30) && (numWords < 50)) {
+  else if ((numWords >= 40) && (numWords <80)) {
       quote.css("font-size", "30px");
   }
-  else if ((numWords >= 50) && (numWords < 100)) {
+  else if ((numWords >= 80) && (numWords < 200)) {
       quote.css("font-size", "25px");
   }
-  else if ((numWords >= 100) && (numWords < 300)) {
+  else if ((numWords >= 200) && (numWords < 500)) {
       quote.css("font-size", "20px");
   }
   else {

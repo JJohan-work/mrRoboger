@@ -5,8 +5,38 @@ body {
   font-family: 'Courier New', monospace;
 }
 
+header {
+}
+
+header a {
+  position: absolute;
+  left:5px;
+  top:5px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+header a:hover {
+  position: absolute;
+  left:0;
+  text-decoration: none;
+}
+
+header h2 {
+  font-family: 'Titillium Web', sans-serif;
+  text-shadow:2px 2px red, 3px 3px orange, 4px 4px blue;
+}
+
 #output p {
   margin:30px;
   width: 90vw;
   word-wrap: break-word;
+}
+
+footer p {
+  position: absolute;
+  bottom:0px;
+  right:0px;
+  margin:0;
+  font-size: 12px;
 }

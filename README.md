@@ -20,9 +20,9 @@ Description: robert()
 Test: "takes in an array and returns an array with numbers replaces following 3 rules"
 Expect(robert([0,1,2,3,4])).toEqual([0,"beep","boop","Won't you be my neighbor?",4])
 
-Description: textChange()
-Test: "takes in element to change and elements text to count and changes text size based on the count"
-Expect(robert("#output",[0,"beep","boop","Won't you be my neighbor?",4])).toEqual(font-size=40px;)
+Description: textChange()  
+Test: "takes in element to change and elements text to count and changes text size based on the count"  
+Expect(robert("#output",[0,"beep","boop","Won't you be my neighbor?",4])).toEqual(font-size=40px;)  
 * * *
 
 ## Technologies used
@@ -45,7 +45,6 @@ Expect(robert("#output",[0,"beep","boop","Won't you be my neighbor?",4])).toEqua
 
 ## To Do:
 * Styling
-* User Interface
 
 * * *
 
