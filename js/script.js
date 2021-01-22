@@ -18,6 +18,7 @@ function robert(input) {
   return output
 }
 
+
 // ui logic
 function textChange(toChange,changedText) {
   var quote = $(toChange);
@@ -26,19 +27,20 @@ function textChange(toChange,changedText) {
       quote.css("font-size", "40px");
   }
   else if ((numWords >= 30) && (numWords < 50)) {
-      quote.css("font-size", "25px");
+      quote.css("font-size", "30px");
   }
   else if ((numWords >= 50) && (numWords < 100)) {
-      quote.css("font-size", "20px");
+      quote.css("font-size", "25px");
   }
   else if ((numWords >= 100) && (numWords < 300)) {
-      quote.css("font-size", "15px");
+      quote.css("font-size", "20px");
   }
   else {
-      quote.css("font-size", "10px");
+      quote.css("font-size", "15px");
   }    
 }
 
+// main loop
 $(document).ready(function() {
   $("input").on('change keyup paste',function(event) {
     changedText = robert(increment(($(this).val())))
