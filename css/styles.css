@@ -10,16 +10,25 @@ header {
 
 header a {
   position: absolute;
-  left:5px;
-  top:5px;
+  left:7px;
+  top:7px;
   border: 1px solid black;
   border-radius: 20px;
+  color:whitesmoke;
+  font-size: 1em;
+  padding: 5px;
 }
 
 header a:hover {
   position: absolute;
-  left:0;
   text-decoration: none;
+  animation: back 1s;
+  color:whitesmoke;
+}
+
+@keyframes back {
+  0% {box-shadow: 0px 0px red, 0px 0px orange, 0px 0px green; left:7px; top:7px;}
+  100% {box-shadow: 3px 3px red, 5px 5px orange, 7px 7px green; left:0px; top:0px;}
 }
 
 header h2 {
@@ -30,35 +39,35 @@ header h2 {
 }
 
 @keyframes textShadow {
-   0% {text-shadow:2px 2px red, 3px 3px orange, 4px 4px green;}
+   0% {text-shadow:3px 3px red, 5px 5px orange, 7px 7px green;}
 
-   4% {text-shadow:2px 2px red, 3px 3px orange, 4px 3px green;}
-   8% {text-shadow:2px 2px red, 3px 2px orange, 4px 2px green;}
-  17% {text-shadow:2px -2px red, 3px -2px orange, 4px -2px green;}
-  21% {text-shadow:2px -2px red, 3px -3px orange, 4px -3px green;}
+   4% {text-shadow:3px 3px red, 5px 5px orange, 7px 5px green;}
+   8% {text-shadow:3px 3px red, 5px 3px orange, 7px 3px green;}
+  17% {text-shadow:3px -3px red, 5px -3px orange, 7px -3px green;}
+  21% {text-shadow:3px -3px red, 5px -5px orange, 7px -5px green;}
 
-  25% {text-shadow:2px -2px red, 3px -3px orange, 4px -4px green;}
+  25% {text-shadow:3px -3px red, 5px -5px orange, 7px -7px green;}
 
-  29% {text-shadow:2px -2px red, 3px -3px orange, 3px -4px green;}
-  33% {text-shadow:2px -2px red, 2px -3px orange, 2px -4px green;}
-  42% {text-shadow:-2px -2px red, -2px -3px orange, -2px -4px green;}
-  46% {text-shadow:-2px -2px red, -3px -3px orange, -3px -4px green;}
+  29% {text-shadow:3px -3px red, 5px -5px orange, 5px -7px green;}
+  33% {text-shadow:3px -3px red, 3px -5px orange, 3px -7px green;}
+  42% {text-shadow:-3px -3px red, -3px -5px orange, -3px -7px green;}
+  46% {text-shadow:-3px -3px red, -5px -5px orange, -5px -7px green;}
 
-  50% {text-shadow:-2px -2px red, -3px -3px orange, -4px -4px green;}
+  50% {text-shadow:-3px -3px red, -5px -5px orange, -7px -7px green;}
 
-  54% {text-shadow:-2px -2px red, -3px -3px orange, -4px -3px green;}
-  58% {text-shadow:-2px -2px red, -3px -2px orange, -4px -2px green;}
-  67% {text-shadow:-2px 2px red, -3px 2px orange, -4px 2px green;}
-  71% {text-shadow:-2px 2px red, -3px 3px orange, -4px 3px green;}
+  54% {text-shadow:-3px -3px red, -5px -5px orange, -7px -5px green;}
+  58% {text-shadow:-3px -3px red, -5px -3px orange, -7px -3px green;}
+  67% {text-shadow:-3px 3px red, -5px 3px orange, -7px 3px green;}
+  71% {text-shadow:-3px 3px red, -5px 5px orange, -7px 5px green;}
 
-  75% {text-shadow:-2px 2px red, -3px 3px orange, -4px 4px green;}
+  75% {text-shadow:-3px 3px red, -5px 5px orange, -7px 7px green;}
 
-  79% {text-shadow:-2px 2px red, -3px 3px orange, -3px 4px green;}
-  83% {text-shadow:-2px 2px red, -2px 3px orange, -2px 4px green;}
-  92% {text-shadow:2px 2px red, 2px 3px orange, 2px 4px green;}
-  96% {text-shadow:2px 2px red, 3px 3px orange, 3px 4px green;}
+  79% {text-shadow:-3px 3px red, -5px 5px orange, -5px 7px green;}
+  83% {text-shadow:-3px 3px red, -3px 5px orange, -3px 7px green;}
+  92% {text-shadow:3px 3px red, 3px 5px orange, 3px 7px green;}
+  96% {text-shadow:3px 3px red, 5px 5px orange, 5px 7px green;}
 
-  100% {text-shadow:2px 2px red, 3px 3px orange, 4px 4px green;}
+  100% {text-shadow:3px 3px red, 5px 5px orange, 7px 7px green;}
 }
 
 #output p {
@@ -72,5 +81,5 @@ footer p {
   bottom:0px;
   right:0px;
   margin:0;
-  font-size: 12px;
+  font-size: 13px;
 }
