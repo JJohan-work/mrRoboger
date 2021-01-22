@@ -6,7 +6,8 @@ body {
 }
 
 
-/* --------------- HEADER --------------- */
+/* ------------------------------ HEADER ------------------------------ */
+/* --------------- Back To Github --------------- */
 header a {
   position: absolute;
   left:9px;
@@ -33,6 +34,7 @@ header a:hover {
   100% {box-shadow: 3px 3px red, 5px 5px orange, 9px 9px green; left:2px; top:2px;}
 }
 
+/* --------------- Headline --------------- */
 header h2 {
   font-family: 'Titillium Web', sans-serif;
   font-size: 3em;

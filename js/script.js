@@ -6,20 +6,25 @@ function increment(input) {
   }
   return output
 }
+
 function robert(input) {
   output = input.map(function(value) {
-    if (/3/g.test(value)) {return "<span class='wont'>Won't you be my neighbor?</span>"}
-    else if (/2/g.test(value)) {return "<span class='boop'>Boop!</span>"}
-    else if (/1/g.test(value)) {return "<span class='beep'>Beep!</span>"}
-    else {return `<span class="numRed">${value}</span>`}
+    if (/3/g.test(value)) {
+      return "<span class='wont'>Won't you be my neighbor?</span>"
+    } else if (/2/g.test(value)) {
+      return "<span class='boop'>Boop!</span>"
+    } else if (/1/g.test(value)) {
+      return "<span class='beep'>Beep!</span>"
+    } else {
+      return `<span class="numRed">${value}</span>`
+    }
   });
   return output
 }
 
 // ui logic
-function textChange(toChange,changedText) {
+function textChange(toChange,numWords) {
   var quote = $(toChange);
-  var numWords = changedText.length;
   if ((numWords >= 1) && (numWords < 40)) {
     quote.css("font-size", "40px");
   } else if ((numWords >= 40) && (numWords <80)) {
@@ -29,7 +34,7 @@ function textChange(toChange,changedText) {
   } else if ((numWords >= 200) && (numWords < 500)) {
     quote.css("font-size", "20px");
   } else {
-      quote.css("font-size", "15px");
+    quote.css("font-size", "15px");
   }
 }
 
@@ -38,6 +43,6 @@ $(document).ready(function() {
   $("input").on('change keyup paste',function(event) {
     changedText = robert(increment($(this).val()))
     $("#output div").html(changedText.join(", "));
-    textChange("#output",changedText);
+    textChange("#output",$(this).val());
   });
 });
