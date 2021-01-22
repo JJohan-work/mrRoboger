@@ -70,16 +70,31 @@ header h2 {
   100% {text-shadow:3px 3px red, 5px 5px orange, 7px 7px green;}
 }
 
-#output p {
+#output div {
   margin:30px;
+  margin-left:auto;
+  margin-right:auto;
   width: 90vw;
   word-wrap: break-word;
 }
 
+.wont {
+  color:orange
+}
+
+.boop {
+  color:red;
+}
+
+.beep {
+  color: green;
+}
+
+.numRed {
+  color:orangered;
+}
+
 footer p {
-  position: absolute;
-  bottom:0px;
-  right:0px;
   margin:0;
   font-size: 13px;
 }

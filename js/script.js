@@ -10,10 +10,10 @@ function increment(input) {
 
 function robert(input) {
   output = input.map(function(value) {
-    if (/3/g.test(value)) {return "Won't you be my neighbor?"}
-    else if (/2/g.test(value)) {return "Boop!"}
-    else if (/1/g.test(value)) {return "Beep!"}
-    else {return value}
+    if (/3/g.test(value)) {return "<span class='wont'>Won't you be my neighbor?</span>"}
+    else if (/2/g.test(value)) {return "<span class='boop'>Boop!</span>"}
+    else if (/1/g.test(value)) {return "<span class='beep'>Beep!</span>"}
+    else {return `<span class="numRed">${value}</span>`}
   });
   return output
 }
@@ -40,12 +40,15 @@ function textChange(toChange,changedText) {
   }    
 }
 
+
+
 // main loop
 $(document).ready(function() {
   $("input").on('change keyup paste',function(event) {
     console.log(this)
     changedText = robert(increment($(this).val()))
-    $("#output p").text(changedText.join(", "));
+    
+    $("#output div").html(changedText.join(", "));
     textChange("#output",changedText);
   });
 });
