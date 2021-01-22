@@ -43,10 +43,9 @@ function textChange(toChange,changedText) {
 // main loop
 $(document).ready(function() {
   $("input").on('change keyup paste',function(event) {
-    changedText = robert(increment(($(this).val())))
-    $("#output p").text(changedText);
+    console.log(this)
+    changedText = robert(increment($(this).val()))
+    $("#output p").text(changedText.join(", "));
     textChange("#output",changedText);
   });
-  $();
-
 });
