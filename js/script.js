@@ -1,7 +1,4 @@
-const input = 24
-
-
-
+// business logic
 function increment(input) {
   output = []
   for (i = 0; i <= input; i++) {
@@ -21,5 +18,33 @@ function robert(input) {
   return output
 }
 
-console.log(increment(input))
-console.log(robert(increment(input)))
+// ui logic
+function textChange(toChange,changedText) {
+  var quote = $(toChange);
+  var numWords = changedText.length;
+  if ((numWords >= 1) && (numWords < 30)) {
+      quote.css("font-size", "40px");
+  }
+  else if ((numWords >= 30) && (numWords < 50)) {
+      quote.css("font-size", "25px");
+  }
+  else if ((numWords >= 50) && (numWords < 100)) {
+      quote.css("font-size", "20px");
+  }
+  else if ((numWords >= 100) && (numWords < 300)) {
+      quote.css("font-size", "15px");
+  }
+  else {
+      quote.css("font-size", "10px");
+  }    
+}
+
+$(document).ready(function() {
+  $("input").on('change keyup paste',function(event) {
+    changedText = robert(increment(($(this).val())))
+    $("#output p").text(changedText);
+    textChange("#output",changedText);
+  });
+  $();
+
+});
