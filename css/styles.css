@@ -24,7 +24,41 @@ header a:hover {
 
 header h2 {
   font-family: 'Titillium Web', sans-serif;
-  text-shadow:2px 2px red, 3px 3px orange, 4px 4px blue;
+  font-size: 3em;
+  animation: textShadow 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes textShadow {
+   0% {text-shadow:2px 2px red, 3px 3px orange, 4px 4px green;}
+
+   4% {text-shadow:2px 2px red, 3px 3px orange, 4px 3px green;}
+   8% {text-shadow:2px 2px red, 3px 2px orange, 4px 2px green;}
+  17% {text-shadow:2px -2px red, 3px -2px orange, 4px -2px green;}
+  21% {text-shadow:2px -2px red, 3px -3px orange, 4px -3px green;}
+
+  25% {text-shadow:2px -2px red, 3px -3px orange, 4px -4px green;}
+
+  29% {text-shadow:2px -2px red, 3px -3px orange, 3px -4px green;}
+  33% {text-shadow:2px -2px red, 2px -3px orange, 2px -4px green;}
+  42% {text-shadow:-2px -2px red, -2px -3px orange, -2px -4px green;}
+  46% {text-shadow:-2px -2px red, -3px -3px orange, -3px -4px green;}
+
+  50% {text-shadow:-2px -2px red, -3px -3px orange, -4px -4px green;}
+
+  54% {text-shadow:-2px -2px red, -3px -3px orange, -4px -3px green;}
+  58% {text-shadow:-2px -2px red, -3px -2px orange, -4px -2px green;}
+  67% {text-shadow:-2px 2px red, -3px 2px orange, -4px 2px green;}
+  71% {text-shadow:-2px 2px red, -3px 3px orange, -4px 3px green;}
+
+  75% {text-shadow:-2px 2px red, -3px 3px orange, -4px 4px green;}
+
+  79% {text-shadow:-2px 2px red, -3px 3px orange, -3px 4px green;}
+  83% {text-shadow:-2px 2px red, -2px 3px orange, -2px 4px green;}
+  92% {text-shadow:2px 2px red, 2px 3px orange, 2px 4px green;}
+  96% {text-shadow:2px 2px red, 3px 3px orange, 3px 4px green;}
+
+  100% {text-shadow:2px 2px red, 3px 3px orange, 4px 4px green;}
 }
 
 #output p {
