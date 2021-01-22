@@ -5,13 +5,12 @@ body {
   font-family: 'Courier New', monospace;
 }
 
-header {
-}
 
+/* --------------- HEADER --------------- */
 header a {
   position: absolute;
-  left:7px;
-  top:7px;
+  left:9px;
+  top:9px;
   border: 1px solid black;
   border-radius: 20px;
   color:whitesmoke;
@@ -24,11 +23,14 @@ header a:hover {
   text-decoration: none;
   animation: back 1s;
   color:whitesmoke;
+  box-shadow: 3px 3px red, 5px 5px orange, 9px 9px green;
+  left:2px;
+  top:2px;
 }
 
 @keyframes back {
-  0% {box-shadow: 0px 0px red, 0px 0px orange, 0px 0px green; left:7px; top:7px;}
-  100% {box-shadow: 3px 3px red, 5px 5px orange, 7px 7px green; left:0px; top:0px;}
+  0% {box-shadow: 0px 0px red, 0px 0px orange, 0px 0px green; left:9px; top:9px;}
+  100% {box-shadow: 3px 3px red, 5px 5px orange, 9px 9px green; left:2px; top:2px;}
 }
 
 header h2 {
@@ -36,6 +38,12 @@ header h2 {
   font-size: 3em;
   animation: textShadow 4s;
   animation-iteration-count: infinite;
+}
+
+@media only screen and (max-width:880px) {
+  header h2 {
+    margin-top: 50px;
+  }
 }
 
 @keyframes textShadow {
@@ -70,6 +78,7 @@ header h2 {
   100% {text-shadow:3px 3px red, 5px 5px orange, 7px 7px green;}
 }
 
+/* --------------- OUTPUT --------------- */
 #output div {
   margin:30px;
   margin-left:auto;
@@ -78,22 +87,21 @@ header h2 {
   word-wrap: break-word;
 }
 
+/* --------------- OUTPUT SPANS --------------- */
 .wont {
   color:orange
 }
-
 .boop {
   color:red;
 }
-
 .beep {
   color: green;
 }
-
 .numRed {
   color:orangered;
 }
 
+/* --------------- FOOTER --------------- */
 footer p {
   margin:0;
   font-size: 13px;

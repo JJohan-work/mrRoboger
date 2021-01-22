@@ -7,7 +7,6 @@ function increment(input) {
   return output
 }
 
-
 function robert(input) {
   output = input.map(function(value) {
     if (/3/g.test(value)) {return "<span class='wont'>Won't you be my neighbor?</span>"}
@@ -39,8 +38,6 @@ function textChange(toChange,changedText) {
       quote.css("font-size", "15px");
   }    
 }
-
-
 
 // main loop
 $(document).ready(function() {
