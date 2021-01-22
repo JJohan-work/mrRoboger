@@ -9,6 +9,11 @@ Input number x and the program will output an increment going from 0 to x and re
 * *Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"*
 * *Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"*
 * *Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"*
+    
+main function inside of .ready waits for a keyup, a change or a paste in the input element. It then passes the value of input into increment which returns an array containing 0 to the number.    
+That array is then passed to robert() which maps the input array to a new array that modifies any value that matches the rules and adds span tags for later color coding on the page. The new array is then joined into a single string and set as the html in "#output div".
+textChange runs last which counts how many words are being added and sizes the text appropriately.
+
 
 * * *
 ## Specs
@@ -44,7 +49,7 @@ Expect(robert("#output",[0,"beep","boop","Won't you be my neighbor?",4])).toEqua
 * * *
 
 ## To Do:
-* Styling
+* No revisions are currently planned
 
 * * *
 
