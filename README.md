@@ -5,7 +5,7 @@
 * * *
 
 ## Description  
-Input number x and the program will output an increment going from 0 to x and replace numbers matching these rules:
+Type a number into the entry box and the program will output an increment going from 0 to x and replace numbers matching these rules:
 * *Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"*
 * *Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"*
 * *Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"*
@@ -22,8 +22,11 @@ Test: "takes an input number and outputs an array counting from zero to that num
 Expect(increment(24)).toEqual([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24])
 
 Description: robert()   
-Test: "takes in an array and returns an array with numbers replaces following 3 rules"
-Expect(robert([0,1,2,3,4])).toEqual([0,"beep","boop","Won't you be my neighbor?",4])
+Test: "takes in an array and returns an array with number replacements following 3 rules"
+Expect(robert([0])).toEqual([0])
+Expect(robert([1])).toEqual(["beep"])
+Expect(robert([2])).toEqual(["boop"])
+Expect(robert([3])).toEqual(["Won't you be my neighbor?"])
 
 Description: textChange()  
 Test: "takes in element to change and elements text to count and changes text size based on the count"  
@@ -41,7 +44,8 @@ Expect(robert("#output",[0,"beep","boop","Won't you be my neighbor?",4])).toEqua
 * * *
 
 ## Setup instructions:  
-* Go to [Github Pages](https://jjohan-work.github.io/mrRoboger/) to see webpage
+* Go to [Github Pages](https://jjohan-work.github.io/mrRoboger/) to see webpage.
+* Type in number, page will react automatically to the input field change.
 #### Alt
 * Clone Repo
 * Open index.html in browser
