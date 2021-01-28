@@ -45,4 +45,7 @@ $(document).ready(function() {
     $("#output div").html(changedText.join(", "));
     textChange("#output",$(this).val());
   });
+  $("form").submit(function(event) {
+    event.preventDefault();
+  });
 });
