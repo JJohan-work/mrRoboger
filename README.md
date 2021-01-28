@@ -29,8 +29,13 @@ Expect(robert([2])).toEqual(["boop"])
 Expect(robert([3])).toEqual(["Won't you be my neighbor?"])
 
 Description: textChange()  
-Test: "takes in element to change and elements text to count and changes text size based on the count"  
-Expect(robert("#output",[0,"beep","boop","Won't you be my neighbor?",4])).toEqual(font-size=40px;)  
+Test: "takes in element to change and number of values in array and changes text size based on the number"  
+Expect(textChange("#output","1-40")).toEqual(font-size=40px;)   
+Expect(textChange("#output","40-80")).toEqual(font-size=30px;)   
+Expect(textChange("#output","80-200")).toEqual(font-size=25px;)   
+Expect(textChange("#output","200-500")).toEqual(font-size=20px;)   
+Expect(textChange("#output",">500")).toEqual(font-size=15px;)    
+
 * * *
 
 ## Technologies used
